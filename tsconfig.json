@@ -3,7 +3,8 @@
         "experimentalDecorators": true,
         "target": "ES5",
         "module": "ESNEXT",
-        "moduleResolution": "node"
+        "moduleResolution": "node",
+        "lib": ["DOM"]
     },
     "include": ["*.ts", "*.vue"]
 }

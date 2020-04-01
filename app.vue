@@ -17,6 +17,30 @@
         clickMe() {
             this.sample.Count++;
         }
+
+        loadImage(): Promise<void>{
+            return new Promise<void>((resolve, reject) => {
+                var img = new Image()
+                img.src = "http://unknow.com/unknown"
+                img.onload = () => {
+                    resolve()
+                }
+
+                img.onerror = () => {
+                    reject()
+                }
+            })
+
+        }
+
+        async mounted() {
+            try{
+                await this.loadImage()
+            }
+            catch(err){
+                console.log("load failure")
+            }
+        }
     }
 </script>
 <style scoped lang="css">
