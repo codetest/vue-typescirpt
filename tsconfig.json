@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "target": "ES5",
+        "module": "ESNEXT",
+        "moduleResolution": "node"
+    },
+    "include": ["*.ts", "*.vue"]
+}
